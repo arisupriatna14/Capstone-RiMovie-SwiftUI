@@ -9,7 +9,7 @@ let package = Package(
   products: [
     .library(
       name: "MovieModule",
-      targets: ["MovieModule"]),
+      targets: ["MovieModule"])
   ],
   dependencies: [
     .package(name: "RiMovieCore", url: "https://github.com/arisupriatna14/RiMovie-CoreModule.git", from: "0.0.1"),
@@ -22,10 +22,10 @@ let package = Package(
       dependencies: [
         "RiMovieCore",
         "Alamofire",
-        .product(name: "RealmSwift", package: "Realm"),
+        .product(name: "RealmSwift", package: "Realm")
       ]),
     .testTarget(
       name: "MovieModuleTests",
-      dependencies: ["MovieModule"]),
+      dependencies: ["MovieModule"])
   ]
 )

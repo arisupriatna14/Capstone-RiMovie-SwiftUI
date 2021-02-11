@@ -8,25 +8,26 @@
 import Foundation
 
 public struct ClassDicodingUIModel: Equatable, Identifiable {
-  
+
   public let id = UUID()
   public let name: String
   public let url: String
   public let image: String
-  
+
   public init(name: String, url: String, image: String) {
     self.name = name
     self.url = url
     self.image = image
   }
+
 }
 
 extension ClassDicodingUIModel {
-  
+
   public static var stub: ClassDicodingUIModel {
     .init(name: "Menjadi iOS Developer Expert", url: "https://www.dicoding.com/academies/209", image: "class_1")
   }
-  
+
   public static var stubs: [ClassDicodingUIModel] {
     return [
       .init(
@@ -63,5 +64,5 @@ extension ClassDicodingUIModel {
       )
     ]
   }
-  
+
 }

@@ -9,7 +9,8 @@ import SwiftUI
 import Combine
 import RiMovieCore
 
-public class SearchPresenter<Request, Response, Interactor: UseCase>: ObservableObject where Interactor.Request == Request, Interactor.Response == [Response] {
+public class SearchPresenter<Request, Response, Interactor: UseCase>: ObservableObject
+where Interactor.Request == Request, Interactor.Response == [Response] {
   
   private var cancellables: Set<AnyCancellable> = []
   private var subscriptionToken: AnyCancellable?

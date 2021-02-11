@@ -8,22 +8,22 @@
 import Foundation
 
 public struct CertificateUIModel: Equatable, Identifiable {
-  
+
   public let id = UUID()
   public let image: String
   public let name: String
   public let url: String
-  
+
   public init(image: String, name: String, url: String) {
     self.image = image
     self.name = name
     self.url = url
   }
-  
+
 }
 
 extension CertificateUIModel {
-  
+
   public static var stub: CertificateUIModel {
     .init(
       image: "certificate_1",
@@ -31,7 +31,7 @@ extension CertificateUIModel {
       url: "https://www.dicoding.com/certificates/D98XW77YJZM3"
     )
   }
-  
+
   public static var stubs: [CertificateUIModel] {
     return [
       .init(
@@ -86,5 +86,5 @@ extension CertificateUIModel {
       )
     ]
   }
-  
+
 }

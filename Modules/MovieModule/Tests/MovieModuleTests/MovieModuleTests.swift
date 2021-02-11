@@ -10,6 +10,6 @@ final class MovieModuleTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testExample", testExample)
     ]
 }

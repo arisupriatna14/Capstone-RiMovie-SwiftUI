@@ -9,12 +9,12 @@ let package = Package(
   products: [
     .library(
       name: "AboutModule",
-      targets: ["AboutModule"]),
+      targets: ["AboutModule"])
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
     // .package(url: /* package url */, from: "1.0.0"),
-    .package(name: "RiMovieCore", url: "https://github.com/arisupriatna14/RiMovie-CoreModule.git", from: "0.0.1"),
+    .package(name: "RiMovieCore", url: "https://github.com/arisupriatna14/RiMovie-CoreModule.git", from: "0.0.1")
   ],
   targets: [
     .target(
@@ -24,6 +24,6 @@ let package = Package(
       ]),
     .testTarget(
       name: "AboutModuleTests",
-      dependencies: ["AboutModule"]),
+      dependencies: ["AboutModule"])
   ]
 )

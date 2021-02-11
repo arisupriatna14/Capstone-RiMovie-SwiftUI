@@ -7,5 +7,9 @@
 
 import RiMovieCore
 
-public typealias MovieSimilarRepository = GetMovieSimilarRepository<GetMovieSimilarRemoteDataSource, MovieMapper>
+public typealias MovieSimilarRepository = GetMovieSimilarRepository<
+  GetMovieSimilarRemoteDataSource,
+  MovieMapper
+>
+
 public typealias MovieSimilarInteractor = Interactor<Int, [MovieUIModel], MovieSimilarRepository>
