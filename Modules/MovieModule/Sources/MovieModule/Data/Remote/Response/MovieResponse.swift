@@ -40,5 +40,5 @@ public struct MovieResponse: Decodable {
   public let voteCount: Int?
   public let videos: MovieVideosResponse?
   public let credits: MovieCreditResponse?
-  
+
 }
