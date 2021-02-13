@@ -13,7 +13,10 @@ import Resolver
 final class GetMoviesRepositoryTest: XCTestCase {
   
   private var cancellables: Set<AnyCancellable> = []
-  private var repository = GetMoviesRepository<FakeGetMoviesRemoteDataSource, MovieMapper>(remote: Resolver.resolve(), mapper: MovieMapper())
+  private var repository = GetMoviesRepository<
+    FakeGetMoviesRemoteDataSource,
+    MovieMapper
+  >(remote: Resolver.resolve(), mapper: MovieMapper())
   
   func testExecuteMovieNowPlaying() {
     repository.execute(request: .nowPlaying)
@@ -83,7 +86,7 @@ final class GetMoviesRepositoryTest: XCTestCase {
     ("testExecuteMovieNowPlaying", testExecuteMovieNowPlaying),
     ("testExecuteMovieTopRate", testExecuteMovieTopRate),
     ("testExecuteMoviePopular", testExecuteMoviePopular),
-    ("testExecuteMovieUpcoming", testExecuteMovieUpcoming),
+    ("testExecuteMovieUpcoming", testExecuteMovieUpcoming)
   ]
   
 }
