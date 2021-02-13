@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061D514625D58C2A00939060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061D514525D58C2A00939060 /* Assets.xcassets */; };
+		061D514D25D58C2A00939060 /* RiMovieWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 061D514C25D58C2A00939060 /* RiMovieWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		061D515225D58C2A00939060 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D515125D58C2A00939060 /* ContentView.swift */; };
+		061D515425D58C2A00939060 /* RiMovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D515325D58C2A00939060 /* RiMovieApp.swift */; };
+		061D515625D58C2A00939060 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D515525D58C2A00939060 /* ComplicationController.swift */; };
+		061D515825D58C2B00939060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061D515725D58C2B00939060 /* Assets.xcassets */; };
+		061D515B25D58C2B00939060 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061D515A25D58C2B00939060 /* Preview Assets.xcassets */; };
+		061D515F25D58C2B00939060 /* RiMovieWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 061D514325D58C2900939060 /* RiMovieWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		061D516F25D58CB900939060 /* MovieModule in Frameworks */ = {isa = PBXBuildFile; productRef = 061D516E25D58CB900939060 /* MovieModule */; };
+		061D517125D58CB900939060 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 061D517025D58CB900939060 /* SDWebImageSwiftUI */; };
+		061D517325D58CB900939060 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 061D517225D58CB900939060 /* Resolver */; };
+		061D517525D58CB900939060 /* RiMovieCore in Frameworks */ = {isa = PBXBuildFile; productRef = 061D517425D58CB900939060 /* RiMovieCore */; };
+		061D517F25D5952300939060 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D517E25D5952300939060 /* Injection.swift */; };
+		061D518E25D5965B00939060 /* MoviesUpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D518D25D5965B00939060 /* MoviesUpcomingView.swift */; };
+		061D519B25D5979300939060 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A9E11E258A00F000E175C1 /* ShimmerView.swift */; };
+		061D51A425D59C0D00939060 /* MovieItemWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D51A325D59C0D00939060 /* MovieItemWatchView.swift */; };
+		061D51CC25D59E9C00939060 /* MoviesNowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D51CB25D59E9C00939060 /* MoviesNowPlayingView.swift */; };
+		061D51DB25D5A64600939060 /* DetailWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D51DA25D5A64600939060 /* DetailWatchView.swift */; };
+		061D51E325D5AA8A00939060 /* MoviesNowPlayingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D51E225D5AA8A00939060 /* MoviesNowPlayingRouter.swift */; };
+		061D51EB25D5AB1D00939060 /* MoviesUpcomingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D51EA25D5AB1D00939060 /* MoviesUpcomingRouter.swift */; };
 		0631887E25CC4BBF001DEBCF /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 0631887D25CC4BBF001DEBCF /* Resolver */; };
 		063188C825CC511A001DEBCF /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 063188C725CC511A001DEBCF /* Resolver */; };
 		06328F9325CCDE5500BA2EFD /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06328F9225CCDE5500BA2EFD /* DependencyManager.swift */; };
@@ -88,6 +108,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		061D514E25D58C2A00939060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8693DDB82588317F00D71477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 061D514B25D58C2A00939060;
+			remoteInfo = "RiMovieWatch Extension";
+		};
+		061D515D25D58C2B00939060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8693DDB82588317F00D71477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 061D514225D58C2900939060;
+			remoteInfo = RiMovieWatch;
+		};
 		86DE45C72592638000D5898F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8693DDB82588317F00D71477 /* Project object */;
@@ -105,6 +139,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		061D516025D58C2B00939060 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				061D515F25D58C2B00939060 /* RiMovieWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061D516325D58C2B00939060 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				061D514D25D58C2A00939060 /* RiMovieWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86DE45CD2592638000D5898F /* Embed App Clips */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,6 +186,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		061D514325D58C2900939060 /* RiMovieWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiMovieWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		061D514525D58C2A00939060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		061D514725D58C2A00939060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		061D514C25D58C2A00939060 /* RiMovieWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RiMovieWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		061D515125D58C2A00939060 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		061D515325D58C2A00939060 /* RiMovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiMovieApp.swift; sourceTree = "<group>"; };
+		061D515525D58C2A00939060 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		061D515725D58C2B00939060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		061D515A25D58C2B00939060 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		061D515C25D58C2B00939060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		061D517E25D5952300939060 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		061D518D25D5965B00939060 /* MoviesUpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingView.swift; sourceTree = "<group>"; };
+		061D51A325D59C0D00939060 /* MovieItemWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemWatchView.swift; sourceTree = "<group>"; };
+		061D51CB25D59E9C00939060 /* MoviesNowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesNowPlayingView.swift; sourceTree = "<group>"; };
+		061D51DA25D5A64600939060 /* DetailWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWatchView.swift; sourceTree = "<group>"; };
+		061D51E225D5AA8A00939060 /* MoviesNowPlayingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesNowPlayingRouter.swift; sourceTree = "<group>"; };
+		061D51EA25D5AB1D00939060 /* MoviesUpcomingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUpcomingRouter.swift; sourceTree = "<group>"; };
 		06328F9225CCDE5500BA2EFD /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		0635055A25D3B008007E362D /* AboutModule */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AboutModule; path = ../Modules/AboutModule; sourceTree = "<group>"; };
 		0681E0CE25D3875400A048B5 /* SearchModule */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SearchModule; path = ../Modules/SearchModule; sourceTree = "<group>"; };
@@ -188,6 +261,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		061D514925D58C2A00939060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061D517325D58CB900939060 /* Resolver in Frameworks */,
+				061D517125D58CB900939060 /* SDWebImageSwiftUI in Frameworks */,
+				061D516F25D58CB900939060 /* MovieModule in Frameworks */,
+				061D517525D58CB900939060 /* RiMovieCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8693DDC12588318100D71477 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +319,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061D514425D58C2900939060 /* RiMovieWatch */ = {
+			isa = PBXGroup;
+			children = (
+				061D514525D58C2A00939060 /* Assets.xcassets */,
+				061D514725D58C2A00939060 /* Info.plist */,
+			);
+			path = RiMovieWatch;
+			sourceTree = "<group>";
+		};
+		061D515025D58C2A00939060 /* RiMovieWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				061D51A225D59BF400939060 /* Components */,
+				061D517D25D5951300939060 /* Module */,
+				061D517C25D5950700939060 /* DI */,
+				061D515125D58C2A00939060 /* ContentView.swift */,
+				061D515325D58C2A00939060 /* RiMovieApp.swift */,
+				061D515525D58C2A00939060 /* ComplicationController.swift */,
+				061D515725D58C2B00939060 /* Assets.xcassets */,
+				061D515C25D58C2B00939060 /* Info.plist */,
+				061D515925D58C2B00939060 /* Preview Content */,
+			);
+			path = "RiMovieWatch Extension";
+			sourceTree = "<group>";
+		};
+		061D515925D58C2B00939060 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				061D515A25D58C2B00939060 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		061D517C25D5950700939060 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				061D517E25D5952300939060 /* Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		061D517D25D5951300939060 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				061D51D925D5A63300939060 /* Detail */,
+				061D51CA25D59E8800939060 /* MoviesNowPlaying */,
+				061D518C25D5964600939060 /* MoviesUpcoming */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		061D518C25D5964600939060 /* MoviesUpcoming */ = {
+			isa = PBXGroup;
+			children = (
+				061D518D25D5965B00939060 /* MoviesUpcomingView.swift */,
+				061D51EA25D5AB1D00939060 /* MoviesUpcomingRouter.swift */,
+			);
+			path = MoviesUpcoming;
+			sourceTree = "<group>";
+		};
+		061D51A225D59BF400939060 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				061D51A325D59C0D00939060 /* MovieItemWatchView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		061D51CA25D59E8800939060 /* MoviesNowPlaying */ = {
+			isa = PBXGroup;
+			children = (
+				061D51CB25D59E9C00939060 /* MoviesNowPlayingView.swift */,
+				061D51E225D5AA8A00939060 /* MoviesNowPlayingRouter.swift */,
+			);
+			path = MoviesNowPlaying;
+			sourceTree = "<group>";
+		};
+		061D51D925D5A63300939060 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				061D51DA25D5A64600939060 /* DetailWatchView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		8691F8DF25896B82001A1B83 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +442,8 @@
 				8693DDCD2588318100D71477 /* macOS */,
 				86DE45BB2592637D00D5898F /* RiMovieAppClip */,
 				86DE46462593221000D5898F /* RiMovieWidget */,
+				061D514425D58C2900939060 /* RiMovieWatch */,
+				061D515025D58C2A00939060 /* RiMovieWatch Extension */,
 				8693DDC52588318100D71477 /* Products */,
 				86DE4625259265FD00D5898F /* Frameworks */,
 			);
@@ -296,6 +467,8 @@
 				8693DDCC2588318100D71477 /* RiMovie.app */,
 				86DE45BA2592637D00D5898F /* RiMovieAppClip.app */,
 				86DE46412593220F00D5898F /* RiMovieWidgetExtension.appex */,
+				061D514325D58C2900939060 /* RiMovieWatch.app */,
+				061D514C25D58C2A00939060 /* RiMovieWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -587,6 +760,46 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		061D514225D58C2900939060 /* RiMovieWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061D516725D58C2B00939060 /* Build configuration list for PBXNativeTarget "RiMovieWatch" */;
+			buildPhases = (
+				061D514125D58C2900939060 /* Resources */,
+				061D516325D58C2B00939060 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				061D514F25D58C2A00939060 /* PBXTargetDependency */,
+			);
+			name = RiMovieWatch;
+			productName = RiMovieWatch;
+			productReference = 061D514325D58C2900939060 /* RiMovieWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		061D514B25D58C2A00939060 /* RiMovieWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061D516625D58C2B00939060 /* Build configuration list for PBXNativeTarget "RiMovieWatch Extension" */;
+			buildPhases = (
+				061D514825D58C2A00939060 /* Sources */,
+				061D514925D58C2A00939060 /* Frameworks */,
+				061D514A25D58C2A00939060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RiMovieWatch Extension";
+			packageProductDependencies = (
+				061D516E25D58CB900939060 /* MovieModule */,
+				061D517025D58CB900939060 /* SDWebImageSwiftUI */,
+				061D517225D58CB900939060 /* Resolver */,
+				061D517425D58CB900939060 /* RiMovieCore */,
+			);
+			productName = "RiMovieWatch Extension";
+			productReference = 061D514C25D58C2A00939060 /* RiMovieWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		8693DDC32588318100D71477 /* RiMovie (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8693DDD82588318100D71477 /* Build configuration list for PBXNativeTarget "RiMovie (iOS)" */;
@@ -597,12 +810,14 @@
 				86DE45CD2592638000D5898F /* Embed App Clips */,
 				86DE46522593221300D5898F /* Embed App Extensions */,
 				86F2C05525A2072A0040C41F /* ShellScript */,
+				061D516025D58C2B00939060 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				86DE45C82592638000D5898F /* PBXTargetDependency */,
 				86DE464D2593221300D5898F /* PBXTargetDependency */,
+				061D515E25D58C2B00939060 /* PBXTargetDependency */,
 			);
 			name = "RiMovie (iOS)";
 			packageProductDependencies = (
@@ -686,9 +901,15 @@
 		8693DDB82588317F00D71477 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					061D514225D58C2900939060 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					061D514B25D58C2A00939060 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					8693DDC32588318100D71477 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -725,11 +946,30 @@
 				8693DDCB2588318100D71477 /* RiMovie (macOS) */,
 				86DE45B92592637D00D5898F /* RiMovieAppClip */,
 				86DE46402593220F00D5898F /* RiMovieWidgetExtension */,
+				061D514225D58C2900939060 /* RiMovieWatch */,
+				061D514B25D58C2A00939060 /* RiMovieWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		061D514125D58C2900939060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061D514625D58C2A00939060 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061D514A25D58C2A00939060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061D515B25D58C2B00939060 /* Preview Assets.xcassets in Resources */,
+				061D515825D58C2B00939060 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8693DDC22588318100D71477 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -787,6 +1027,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		061D514825D58C2A00939060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061D519B25D5979300939060 /* ShimmerView.swift in Sources */,
+				061D515225D58C2A00939060 /* ContentView.swift in Sources */,
+				061D51DB25D5A64600939060 /* DetailWatchView.swift in Sources */,
+				061D51EB25D5AB1D00939060 /* MoviesUpcomingRouter.swift in Sources */,
+				061D518E25D5965B00939060 /* MoviesUpcomingView.swift in Sources */,
+				061D51CC25D59E9C00939060 /* MoviesNowPlayingView.swift in Sources */,
+				061D51E325D5AA8A00939060 /* MoviesNowPlayingRouter.swift in Sources */,
+				061D517F25D5952300939060 /* Injection.swift in Sources */,
+				061D51A425D59C0D00939060 /* MovieItemWatchView.swift in Sources */,
+				061D515425D58C2A00939060 /* RiMovieApp.swift in Sources */,
+				061D515625D58C2A00939060 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8693DDC02588318100D71477 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -872,6 +1130,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		061D514F25D58C2A00939060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 061D514B25D58C2A00939060 /* RiMovieWatch Extension */;
+			targetProxy = 061D514E25D58C2A00939060 /* PBXContainerItemProxy */;
+		};
+		061D515E25D58C2B00939060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 061D514225D58C2900939060 /* RiMovieWatch */;
+			targetProxy = 061D515D25D58C2B00939060 /* PBXContainerItemProxy */;
+		};
 		86DE45C82592638000D5898F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 86DE45B92592637D00D5898F /* RiMovieAppClip */;
@@ -885,6 +1153,96 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		061D516125D58C2B00939060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5P7378L7B8;
+				IBSC_MODULE = RiMovieWatch_Extension;
+				INFOPLIST_FILE = RiMovieWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arisupriatna.RiMovie.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		061D516225D58C2B00939060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5P7378L7B8;
+				IBSC_MODULE = RiMovieWatch_Extension;
+				INFOPLIST_FILE = RiMovieWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arisupriatna.RiMovie.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		061D516425D58C2B00939060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RiMovieWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 5P7378L7B8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "RiMovieWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arisupriatna.RiMovie.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		061D516525D58C2B00939060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RiMovieWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 5P7378L7B8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "RiMovieWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arisupriatna.RiMovie.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 		8693DDD62588318100D71477 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1208,6 +1566,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		061D516625D58C2B00939060 /* Build configuration list for PBXNativeTarget "RiMovieWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061D516425D58C2B00939060 /* Debug */,
+				061D516525D58C2B00939060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		061D516725D58C2B00939060 /* Build configuration list for PBXNativeTarget "RiMovieWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061D516125D58C2B00939060 /* Debug */,
+				061D516225D58C2B00939060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8693DDBB2588317F00D71477 /* Build configuration list for PBXProject "RiMovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1283,6 +1659,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		061D516E25D58CB900939060 /* MovieModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MovieModule;
+		};
+		061D517025D58CB900939060 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8693DE2C25884FDE00D71477 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		061D517225D58CB900939060 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0631887C25CC4BBF001DEBCF /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		061D517425D58CB900939060 /* RiMovieCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 067248F225D50E5500A013A2 /* XCRemoteSwiftPackageReference "RiMovie-CoreModule" */;
+			productName = RiMovieCore;
+		};
 		0631887D25CC4BBF001DEBCF /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0631887C25CC4BBF001DEBCF /* XCRemoteSwiftPackageReference "Resolver" */;
