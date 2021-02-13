@@ -21,6 +21,8 @@ jobs:
     - name: Run SwiftLint
       run: |
         sh .github/workflows/lint.sh
+    - name: Run Unit Test AboutModule
+      run: xcodebuild test -project RiMovie-SwiftUI-Apps/RiMovie.xcodeproj -scheme AboutModule -destination "platform=iOS Simulator,name=iPhone 11 Pro"
     - name: Build iOS App
       run: xcodebuild -project RiMovie-SwiftUI-Apps/RiMovie.xcodeproj -scheme "RiMovie (iOS)" -destination "platform=iOS Simulator,name=iPhone 11 Pro"
     - name: Build AppClip

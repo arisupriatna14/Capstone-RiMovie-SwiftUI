@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "MovieModule",
-  platforms: [.iOS(.v14), .macOS(.v10_15)],
+  platforms: [.iOS(.v14), .macOS(.v10_15), .watchOS(.v7)],
   products: [
     .library(
       name: "MovieModule",

@@ -14,13 +14,15 @@ let package = Package(
   dependencies: [
     // Dependencies declare other packages that this package depends on.
     // .package(url: /* package url */, from: "1.0.0"),
-    .package(name: "RiMovieCore", url: "https://github.com/arisupriatna14/RiMovie-CoreModule.git", from: "0.0.1")
+    .package(name: "RiMovieCore", url: "https://github.com/arisupriatna14/RiMovie-CoreModule.git", from: "0.0.1"),
+    .package(name: "Resolver", url: "https://github.com/hmlongco/Resolver", from: "1.4.0")
   ],
   targets: [
     .target(
       name: "AboutModule",
       dependencies: [
-        "RiMovieCore"
+        "RiMovieCore",
+        "Resolver"
       ]),
     .testTarget(
       name: "AboutModuleTests",
