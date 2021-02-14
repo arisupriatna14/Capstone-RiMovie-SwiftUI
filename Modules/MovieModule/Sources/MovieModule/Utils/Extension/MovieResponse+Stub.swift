@@ -2,14 +2,14 @@
 //  File.swift
 //  
 //
-//  Created by Ari Supriatna on 08/02/21.
+//  Created by Ari Supriatna on 12/02/21.
 //
 
 import Foundation
 
-extension MovieModel {
+extension MovieResponse {
   
-  public static var stub: MovieModel {
+  public static var stub: MovieResponse {
     .init(
       id: 0,
       backdropPath: "/cjaOSjsjV6cl3uXdJqimktT880L.jpg",
@@ -26,13 +26,12 @@ extension MovieModel {
       title: "The Croods: A New Age",
       voteAverage: 0.0,
       voteCount: 0,
-      videos: [.stub],
-      cast: [.stub],
-      crew: [.stub]
+      videos: .stub,
+      credits: .stub
     )
   }
   
-  public static var stubs: [MovieModel] {
+  public static var stubs: [MovieResponse] {
     return [.stub, .stub]
   }
   

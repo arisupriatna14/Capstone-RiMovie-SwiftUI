@@ -14,7 +14,8 @@ let package = Package(
   dependencies: [
     .package(name: "RiMovieCore", url: "https://github.com/arisupriatna14/RiMovie-CoreModule.git", from: "0.0.1"),
     .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.4.1"),
-    .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", from: "10.5.0")
+    .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", from: "10.5.0"),
+    .package(name: "Resolver", url: "https://github.com/hmlongco/Resolver", from: "1.4.0")
   ],
   targets: [
     .target(
@@ -22,7 +23,8 @@ let package = Package(
       dependencies: [
         "RiMovieCore",
         "Alamofire",
-        .product(name: "RealmSwift", package: "Realm")
+        .product(name: "RealmSwift", package: "Realm"),
+        "Resolver"
       ]),
     .testTarget(
       name: "MovieModuleTests",
