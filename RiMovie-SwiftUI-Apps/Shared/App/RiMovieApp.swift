@@ -12,6 +12,7 @@ struct RiMovieApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ContentView()    }
+      ContentView()
+    }
   }
 }

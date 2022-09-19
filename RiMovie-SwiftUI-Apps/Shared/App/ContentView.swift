@@ -6,23 +6,33 @@
 //
 
 import SwiftUI
+#if os(iOS)
 import Resolver
+#endif
 
 struct ContentView: View {
   @State private var selection: String = "home"
   @State private var selectionSidebarMenu: SidebarMenu? = .watchNow
   
+  #if os(iOS)
   @Environment(\.horizontalSizeClass) private var sizeClass
+  #endif
   
   @ViewBuilder
   var body: some View {
+    #if os(iOS)
     if sizeClass == .compact {
       tabBarView
     } else {
       sidebarView
     }
+    #else
+    AppSideBarView()
+      .frame(minWidth: 1016, maxWidth: .infinity, minHeight: 556, maxHeight: .infinity)
+    #endif
   }
   
+  #if os(iOS)
   var tabBarView: some View {
     TabView(selection: $selection) {
       NavigationView {
@@ -65,7 +75,9 @@ struct ContentView: View {
       .tag("about")
     }
   }
+  #endif
   
+  #if os(iOS)
   var sidebarView: some View {
     NavigationSplitView {
       sidebarContent
@@ -86,6 +98,7 @@ struct ContentView: View {
       }
     }
   }
+  #endif
   
   enum SidebarMenu: String, Codable {
     case watchNow

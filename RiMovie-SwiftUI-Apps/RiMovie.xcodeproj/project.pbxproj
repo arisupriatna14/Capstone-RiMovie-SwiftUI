@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026F06F428D8D662000D0C51 /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F06F328D8D65D000D0C51 /* AppSideBarView.swift */; };
+		026F06F528D8D669000D0C51 /* AppSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F06F328D8D65D000D0C51 /* AppSideBarView.swift */; };
+		026F06F628D8D734000D0C51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693DDBE2588317F00D71477 /* ContentView.swift */; };
 		060DFA1528D73BDF00478693 /* ShareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DFA1428D73BDF00478693 /* ShareImageView.swift */; };
 		060DFA1628D7406900478693 /* ShareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DFA1428D73BDF00478693 /* ShareImageView.swift */; };
 		061D514625D58C2A00939060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061D514525D58C2A00939060 /* Assets.xcassets */; };
@@ -55,7 +58,6 @@
 		8693DDD02588318100D71477 /* RiMovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693DDBD2588317F00D71477 /* RiMovieApp.swift */; };
 		8693DDD12588318100D71477 /* RiMovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693DDBD2588317F00D71477 /* RiMovieApp.swift */; };
 		8693DDD22588318100D71477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693DDBE2588317F00D71477 /* ContentView.swift */; };
-		8693DDD32588318100D71477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693DDBE2588317F00D71477 /* ContentView.swift */; };
 		8693DDD42588318100D71477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8693DDBF2588318100D71477 /* Assets.xcassets */; };
 		8693DDD52588318100D71477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8693DDBF2588318100D71477 /* Assets.xcassets */; };
 		8693DE2E25884FDE00D71477 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8693DE2D25884FDE00D71477 /* SDWebImageSwiftUI */; };
@@ -188,6 +190,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		026F06F328D8D65D000D0C51 /* AppSideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSideBarView.swift; sourceTree = "<group>"; };
 		060DFA1428D73BDF00478693 /* ShareImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareImageView.swift; sourceTree = "<group>"; };
 		061D514325D58C2900939060 /* RiMovieWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiMovieWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		061D514525D58C2A00939060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -489,6 +492,7 @@
 			children = (
 				8693DDCE2588318100D71477 /* Info.plist */,
 				8693DDCF2588318100D71477 /* macOS.entitlements */,
+				026F06F328D8D65D000D0C51 /* AppSideBarView.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -1058,6 +1062,7 @@
 				060DFA1528D73BDF00478693 /* ShareImageView.swift in Sources */,
 				06C0F73925D04D9B00356BB0 /* MovieCardView.swift in Sources */,
 				86CFEB092591085100C31DAC /* DetailRouter.swift in Sources */,
+				026F06F528D8D669000D0C51 /* AppSideBarView.swift in Sources */,
 				86CFEB002591056300C31DAC /* ListMovieTrailersView.swift in Sources */,
 				86296163258A137E00DE19AB /* SafariView.swift in Sources */,
 				86DE459B2592455500D5898F /* FavoriteRouter.swift in Sources */,
@@ -1090,8 +1095,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8693DDD32588318100D71477 /* ContentView.swift in Sources */,
 				8693DDD12588318100D71477 /* RiMovieApp.swift in Sources */,
+				026F06F428D8D662000D0C51 /* AppSideBarView.swift in Sources */,
+				026F06F628D8D734000D0C51 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1434,7 +1440,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arisupriatna.RiMovie;
 				PRODUCT_NAME = RiMovie;
 				SDKROOT = macosx;
@@ -1459,7 +1465,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arisupriatna.RiMovie;
 				PRODUCT_NAME = RiMovie;
 				SDKROOT = macosx;
