@@ -1,15 +1,24 @@
 //
-//  MovieCardView.swift
-//  RiMovie
+//  ShareImageView.swift
+//  RiMovie (iOS)
 //
-//  Created by Ari Supriatna on 07/02/21.
+//  Created by Ari Supriatna on 18/09/22.
 //
 
 import SwiftUI
 import SDWebImageSwiftUI
 import MovieModule
 
-struct MovieCardView: View {
+struct VisualEffect: UIViewRepresentable {
+  @State var style : UIBlurEffect.Style // 1
+  func makeUIView(context: Context) -> UIVisualEffectView {
+    return UIVisualEffectView(effect: UIBlurEffect(style: style)) // 2
+  }
+  func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
+  } // 3
+}
+
+struct ShareImageView: View {
   var movie: MovieUIModel
   var width: CGFloat = 200
   var padding: CGFloat = 8
@@ -38,18 +47,18 @@ struct MovieCardView: View {
           .font(.caption2)
           .multilineTextAlignment(.leading)
       }
+      .foregroundColor(.white)
       .padding(.all, padding)
     }
     .padding(.all, padding)
     .frame(width: width + 20)
-    .background(Color.white)
+    .background(Color.indigo)
     .cornerRadius(16)
-//    .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0.0, y: 20)
   }
 }
 
-struct MovieCardView_Previews: PreviewProvider {
+struct ShareImageView_Previews: PreviewProvider {
   static var previews: some View {
-    MovieCardView(movie: .stub)
+    ShareImageView(movie: .stub)
   }
 }

@@ -14,41 +14,38 @@ struct SearchView: View {
   @ObservedObject var presenter: SearchPresenter<String, MovieUIModel, SearchInteractor>
   
   var body: some View {
-    SearchBar(text: self.$presenter.query) {
-      VStack {
-        Group {
-          if presenter.isLoading {
-            ProgressView()
-          } else if presenter.isEmptyResult {
-            VStack(alignment: .center) {
-              Spacer()
-              Text("Movie yang kamu cari tidak ditemukan 🥺")
-            }
-          } else if presenter.query.isEmpty {
-            CustomEmptyView(
-              image: "search_tab",
-              title: "Search your favorite movies"
-            ).offset(y: -50)
+    ScrollView {
+      Group {
+        if presenter.isLoading {
+          ProgressView()
+        } else if presenter.isEmptyResult {
+          VStack(alignment: .center) {
+            Spacer()
+            Text("Movie yang kamu cari tidak ditemukan 🥺")
           }
-        }
-        
-        if let movies = presenter.list {
-          ScrollView(.vertical, showsIndicators: false) {
-            VStack {
-              ForEach(movies) { item in
-                linkBuilderMovieDetail(for: item) {
-                  MovieCardHorizontal(movie: item, isShowOverview: true)
-                    .padding(.bottom)
-                }
-              }
-            }
-            .padding(.all)
-          }
+        } else if presenter.query.isEmpty {
+          CustomEmptyView(
+            image: "search_tab",
+            title: "Search your favorite movies"
+          )
+          .offset(y: 50)
         }
       }
-      .navigationTitle("Search Movies")
+      
+      if let movies = presenter.list {
+        VStack {
+          ForEach(movies) { item in
+            linkBuilderMovieDetail(for: item) {
+              MovieCardHorizontal(movie: item, isShowOverview: true)
+                .padding(.bottom)
+            }
+          }
+        }
+        .padding(.all)
+      }
     }
-    .edgesIgnoringSafeArea(.all)
+    .searchable(text: self.$presenter.query)
+    .navigationTitle("Search Movies")
     .onAppear {
       self.presenter.startObserve()
     }

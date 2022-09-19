@@ -81,6 +81,14 @@ struct DetailView: View {
         }
       }
       #endif
+      
+      ToolbarItem(placement: .navigationBarTrailing) {
+        Button {
+          shareToInstagram()
+        } label: {
+          Image(systemName: "square.and.arrow.up")
+        }
+      }
     }
     .onAppear {
       if self.presenter.detailMovie == nil && self.presenter.similarMovieList == nil {
@@ -98,6 +106,36 @@ extension DetailView {
       self.presenter.updateMovie(request: movie.id)
     } else {
       self.presenter.addMovieToFavorite(request: movie)
+    }
+  }
+  
+  @MainActor
+  private func generateSnapshot(movie: MovieUIModel) -> UIImage {
+    let renderer = ImageRenderer(content: ShareImageView(movie: movie))
+    renderer.scale = 3.0
+    
+    return renderer.uiImage ?? UIImage()
+  }
+  
+  @MainActor func shareToInstagram() {
+    if let storiesUrl = URL(string: "instagram-stories://share") {
+      if UIApplication.shared.canOpenURL(storiesUrl) {
+        guard let imageData = generateSnapshot(movie: self.presenter.detailMovie ?? .stub).pngData() else { return }
+        let pasteboardItems: [String: Any] = [
+          "com.instagram.sharedSticker.stickerImage": imageData,
+          "com.instagram.sharedSticker.backgroundTopColor": "#FFFFFF",
+          "com.instagram.sharedSticker.backgroundBottomColor": "#FFFFFF"
+        ]
+        
+        let pasteboardOptions = [
+          UIPasteboard.OptionsKey.expirationDate: Date().addingTimeInterval(300)
+        ]
+        
+        UIPasteboard.general.setItems([pasteboardItems], options: pasteboardOptions)
+        UIApplication.shared.open(storiesUrl, options: [:], completionHandler: nil)
+      } else {
+        print("Instagram tidak ada")
+      }
     }
   }
 }

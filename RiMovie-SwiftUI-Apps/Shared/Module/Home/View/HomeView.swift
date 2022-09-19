@@ -90,7 +90,7 @@ struct HomeView: View {
         ProgressView()
       }
     }
-    .navigationTitle("RiMovies+")
+//    .navigationTitle("RiMovies+")
     .onAppear {
       self.presenter.getMovies(request: .nowPlaying)
       self.presenter.getMovies(request: .popular)

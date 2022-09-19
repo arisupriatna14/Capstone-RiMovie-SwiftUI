@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060DFA1528D73BDF00478693 /* ShareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DFA1428D73BDF00478693 /* ShareImageView.swift */; };
+		060DFA1628D7406900478693 /* ShareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DFA1428D73BDF00478693 /* ShareImageView.swift */; };
 		061D514625D58C2A00939060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061D514525D58C2A00939060 /* Assets.xcassets */; };
 		061D514D25D58C2A00939060 /* RiMovieWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 061D514C25D58C2A00939060 /* RiMovieWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		061D515225D58C2A00939060 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061D515125D58C2A00939060 /* ContentView.swift */; };
@@ -186,6 +188,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		060DFA1428D73BDF00478693 /* ShareImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareImageView.swift; sourceTree = "<group>"; };
 		061D514325D58C2900939060 /* RiMovieWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiMovieWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		061D514525D58C2A00939060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		061D514725D58C2A00939060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -531,6 +534,7 @@
 				86296162258A137E00DE19AB /* SafariView.swift */,
 				86CFEB1E25910E5C00C31DAC /* SearchBar.swift */,
 				86F2C05D25A2C8E00040C41F /* CustomEmptyView.swift */,
+				060DFA1428D73BDF00478693 /* ShareImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -845,6 +849,8 @@
 			dependencies = (
 			);
 			name = "RiMovie (macOS)";
+			packageProductDependencies = (
+			);
 			productName = "RiMovie (macOS)";
 			productReference = 8693DDCC2588318100D71477 /* RiMovie.app */;
 			productType = "com.apple.product-type.application";
@@ -1049,6 +1055,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060DFA1528D73BDF00478693 /* ShareImageView.swift in Sources */,
 				06C0F73925D04D9B00356BB0 /* MovieCardView.swift in Sources */,
 				86CFEB092591085100C31DAC /* DetailRouter.swift in Sources */,
 				86CFEB002591056300C31DAC /* ListMovieTrailersView.swift in Sources */,
@@ -1095,6 +1102,7 @@
 				86DE45E32592652B00D5898F /* MovieCardHorizontal.swift in Sources */,
 				06328F9425CCDE5500BA2EFD /* DependencyManager.swift in Sources */,
 				86DE45E22592652B00D5898F /* MovieCardVertical.swift in Sources */,
+				060DFA1628D7406900478693 /* ShareImageView.swift in Sources */,
 				86DE45EE2592654B00D5898F /* ListMovieCastView.swift in Sources */,
 				86DE46122592658500D5898F /* Injection.swift in Sources */,
 				86DE45F32592656100D5898F /* ShimmerView.swift in Sources */,
@@ -1170,7 +1178,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -1192,7 +1200,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -1217,7 +1225,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -1243,7 +1251,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -1369,7 +1377,7 @@
 				DEVELOPMENT_TEAM = 5P7378L7B8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1394,7 +1402,7 @@
 				DEVELOPMENT_TEAM = 5P7378L7B8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1426,7 +1434,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arisupriatna.RiMovie;
 				PRODUCT_NAME = RiMovie;
 				SDKROOT = macosx;
@@ -1451,7 +1459,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arisupriatna.RiMovie;
 				PRODUCT_NAME = RiMovie;
 				SDKROOT = macosx;
@@ -1471,7 +1479,7 @@
 				DEVELOPMENT_TEAM = 5P7378L7B8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RiMovieAppClip/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1498,7 +1506,7 @@
 				DEVELOPMENT_TEAM = 5P7378L7B8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RiMovieAppClip/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1523,7 +1531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5P7378L7B8;
 				INFOPLIST_FILE = RiMovieWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1549,7 +1557,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5P7378L7B8;
 				INFOPLIST_FILE = RiMovieWidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
